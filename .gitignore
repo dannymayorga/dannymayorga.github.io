@@ -7,11 +7,19 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependency directories
 node_modules
-dist
-dist-ssr
+
+# Build outputs
 dist/
+dist-ssr/
 deploy/
+
+# Env files
+.env
+.env.*
+
+# Local-only config
 *.local
 
 # Editor directories and files
@@ -24,3 +32,6 @@ deploy/
 *.njsproj
 *.sln
 *.sw?
+
+# Ensure CNAME stays in public
+!public/CNAME
