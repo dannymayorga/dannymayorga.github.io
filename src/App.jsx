@@ -1,19 +1,16 @@
-import Hero from './sections/Hero';
-import About from './sections/About';
-import AIWork from './sections/AIWork';
-import DesignLegacy from './sections/DesignLegacy';
+import React from 'react'
+import Hero from './sections/Hero'
+import About from './sections/About'
+import AIWork from './sections/AIWork'
+import DesignLegacy from './sections/DesignLegacy'
 
-function App() {
+export default function App() {
   return (
-    <div className="bg-neutral-950 text-white font-sans leading-relaxed">
+    <main className="min-h-screen bg-white text-black font-sans">
       <Hero />
-      <main className="space-y-32">
-        <About />
-        <AIWork />
-        <DesignLegacy />
-      </main>
-    </div>
-  );
+      <About />
+      <AIWork />
+      <DesignLegacy />
+    </main>
+  )
 }
-
-export default App;
