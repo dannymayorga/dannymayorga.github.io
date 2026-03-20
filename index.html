@@ -51,6 +51,9 @@
     <p>
       More to come.
     </p>
-    <p class="subtle">© 2026 Danny Mayorga</p>
+    <p class="subtle">© <span id="year"></span> Danny Mayorga</p>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
