@@ -1,59 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Danny Mayorga – Engineering, AI, Automation, Design, and Digital Simplicity." />
-    <meta name="author" content="Danny Mayorga" />
-    <meta name="theme-color" content="#2C6EFF" />
-
-    <meta property="og:title" content="Danny Mayorga – Tech Leader, AI Strategist" />
-    <meta property="og:description" content="Engineering leadership at the intersection of automation, AI, and thoughtful design." />
-    <meta property="og:url" content="https://dannymayorga.com" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://dannymayorga.com/og-preview.png" />
-
-    <title>Danny Mayorga - Coming soon</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        background-color: #0f172a;
-        color: #f8fafc;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        text-align: center;
-      }
-      h1 {
-        font-size: 3rem;
-        margin-bottom: 1rem;
-        color: #2c6eff;
-      }
-      p {
-        font-size: 1.25rem;
-        max-width: 600px;
-        margin-bottom: 2rem;
-        color: #cbd5e1;
-      }
-      .subtle {
-        font-size: 0.875rem;
-        color: #94a3b8;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Coming Soon</h1>
-    <p>
-      More to come.
-    </p>
-    <p class="subtle">© <span id="year"></span> Danny Mayorga</p>
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danny Mayorga</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 60px 20px;
+      background: #0a0e1a;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 {
+      font-size: 64px;
+      font-weight: 900;
+      margin: 0 0 24px 0;
+      letter-spacing: -2px;
+      line-height: 1.1;
+    }
+    
+    .subtitle {
+      font-size: 18px;
+      color: #aaa;
+      max-width: 600px;
+      margin-bottom: 48px;
+      font-weight: 400;
+    }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-bottom: 48px;
+    }
+    
+    .card {
+      border: 2px solid #333;
+      padding: 24px;
+      background: transparent;
+    }
+    
+    .card h2 {
+      font-size: 20px;
+      margin: 0 0 12px 0;
+      font-weight: 700;
+    }
+    
+    .card p {
+      margin: 0;
+      color: #bbb;
+      font-size: 16px;
+    }
+    
+    .link {
+      display: inline-block;
+      padding: 14px 32px;
+      border: 2px solid #fff;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      transition: all 0.2s;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .link:hover {
+      background: #fff;
+      color: #0a0e1a;
+    }
+    
+    .footer {
+      color: #666;
+      font-size: 14px;
+      margin-top: 60px;
+    }
+    
+    @media (max-width: 768px) {
+      h1 { font-size: 42px; }
+      .grid { gap: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Danny Mayorga</h1>
+    <p class="subtitle">Coming soon. AI leadership, design systems, and automation.</p>
+    
+    <div class="grid">
+      <div class="card">
+        <h2>Leadership</h2>
+        <p>Strategy and execution across product, engineering, and design teams.</p>
+      </div>
+      <div class="card">
+        <h2>Systems</h2>
+        <p>Design and technical architecture that scales with teams.</p>
+      </div>
+      <div class="card">
+        <h2>Automation</h2>
+        <p>AI and workflow tooling for practical, measurable outcomes.</p>
+      </div>
+    </div>
+    
+    <a href="https://www.linkedin.com/in/dannymayorga/" class="link">Connect</a>
+    
+    <div class="footer">© <span id="year"></span> Danny Mayorga</div>
+  </div>
+  
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
