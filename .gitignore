@@ -35,3 +35,6 @@ deploy/
 
 # Ensure CNAME stays in public
 !public/CNAME
+
+# Keep local resume/profile export out of version control
+assets/DM-Linkedin-Profile (1).pdf
